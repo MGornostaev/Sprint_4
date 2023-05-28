@@ -49,7 +49,7 @@ public class MainPage {
         WebElement element = webDriver.findElement(acceptCookiesButton);
         new WebDriverWait(webDriver, 3)
                 .until(ExpectedConditions.elementToBeClickable(element));
-        webDriver.findElement(acceptCookiesButton).click();
+        element.click();
         return new MainPage(webDriver);
     }
 

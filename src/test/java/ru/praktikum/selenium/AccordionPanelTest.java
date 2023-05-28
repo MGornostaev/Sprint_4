@@ -15,7 +15,7 @@ public class AccordionPanelTest extends BaseTest {
         this.result = result;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Текст элемента аккордеон-меню. Тестовые данные: {0} {1}")
     public static Object[][] getData() {
         return new Object[][] {
                 { "0", "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},

@@ -33,7 +33,8 @@ public class OrderTest extends BaseTest {
 
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Позитивный сценарий заказа. " +
+            "Тестовые данные: {0} {1} {2} {3} {4} {5} {6} {7} {8} {9}")
     public static Object[][] getData() {
         return new Object[][] {
                 { "bottom", "Игорь", "Тестировочков","Москва, ул. Пушкина, д. 12",
